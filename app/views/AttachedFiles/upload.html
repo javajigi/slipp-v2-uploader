@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sustainable People, Programming, Programmer</title>
+<script type="text/javascript">	
+	document.domain = "slipp.net";
+</script>
+</head>
+<body>
+#{if hasError}
+{"hasError":true,
+"errorMessage":"${errorMessage}"}
+#{/if}
+#{else}
+{"id":${attachedFile.id},
+"name":"${attachedFile.name}",
+"contentsType":"${attachedFile.contentsType}", 
+"hasError":false,
+"errorMessage":""}
+#{/else}
+</body>
+</html>
